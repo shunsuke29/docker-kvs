@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.5'
 services:
   selenium_chrome:
     image: selenium/node-chrome:3.141.59-vanadium
@@ -27,7 +27,7 @@ services:
       - dockerkvs_selenium_volume:/images/
     environment:
       WEB_HOST: web
-      WEB_PORT: 10080
+      WEB_PORT: 80
       SELENIUM_HUB_HOST: selenium_hub
       SELENIUM_HUB_PORT: 4444
   apptest:
